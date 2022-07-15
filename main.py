@@ -58,7 +58,7 @@ async def on_message(message):
         return await message.author.send("Нужно быть на сервере PlanetMod!")   
     role = author.guild.get_role(934830041639055360)
 
-    if role in memberrrr.roles:
+    if role in auhor.roles:
         if support.count_documents({"s":message.author.id}) == 0: return
         member = client.get_user(support.find_one({"s":message.author.id})['sob'])
 
